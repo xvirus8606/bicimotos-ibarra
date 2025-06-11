@@ -3,185 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bicimotos Ibarra - Bicimotos a Gasolina en México</title>
+    <title>Bicimotos Ibarra</title>
     <style>
+        /* Estilos generales */
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-
         header {
-            background-color: #c62828;
-            color: white;
-            padding: 30px 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
             text-align: center;
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2em;
-        }
-
         nav {
-            background-color: #b71c1c;
-            padding: 10px;
-            text-align: center;
+            background-color: #444;
+            overflow: hidden;
         }
-
         nav a {
+            float: left;
+            display: block;
             color: white;
+            text-align: center;
+            padding: 14px 20px;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
         }
-
         nav a:hover {
-            text-decoration: underline;
+            background-color: #ddd;
+            color: black;
         }
-
-        section {
-            padding: 30px 20px;
-            max-width: 1000px;
-            margin: auto;
+        .container {
+            width: 80%;
+            margin: 20px auto;
         }
-
-        section h2 {
-            color: #c62828;
-            border-bottom: 2px solid #c62828;
-            padding-bottom: 5px;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        .product-gallery {
+        .motor-gallery {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            justify-content: space-around;
         }
-
-        .product-card {
-            flex: 1 1 calc(33% - 20px);
-            background-color: white;
+        .motor-item {
+            width: 30%;
+            background-color: #fff;
             border: 1px solid #ddd;
             border-radius: 8px;
-            padding: 15px;
-            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
-        .product-card img {
+        .motor-item img {
             width: 100%;
-            max-height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
+            height: auto;
         }
-
+        .motor-item h3 {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin: 0;
+        }
+        .motor-item p {
+            padding: 10px;
+            text-align: center;
+        }
         footer {
-            background-color: #212121;
+            background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px 10px;
-        }
-
-        .whatsapp-button {
+            padding: 10px 0;
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            text-align: center;
-            font-size: 30px;
-            line-height: 60px;
-            z-index: 100;
-            text-decoration: none;
+            width: 100%;
+            bottom: 0;
         }
-
-        @media (max-width: 768px) {
-            .product-card {
-                flex: 1 1 100%;
-            }
+        .contact-buttons a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #25D366; /* WhatsApp */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .contact-buttons a:hover {
+            background-color: #128C7E;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Bicimotos Ibarra</h1>
-        <p>Bienvenidos a la mejor tienda de bicimotos a gasolina en México</p>
-    </header>
+<header>
+    <h1>Bicimotos Ibarra</h1>
+</header>
 
-    <nav>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#productos">Productos</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="container">
+    <section id="inicio">
+        <h2>Bienvenidos a Bicimotos Ibarra</h2>
+        <p>Tu tienda especializada en motores para bicimotos. Encuentra los mejores kits y accesorios para tu bicicleta motorizada.</p>
+    </section>
 
     <section id="nosotros">
-        <h2>¿Quiénes somos?</h2>
-        <p>En Bicimotos Ibarra nos dedicamos a la venta, armado y mantenimiento de bicimotos a gasolina. Nuestra misión es ofrecer soluciones de transporte eficientes, económicas y confiables para todos los mexicanos. Contamos con atención personalizada y envíos a todo el país.</p>
+        <h2>Nosotros</h2>
+        <p>En Bicimotos Ibarra, ofrecemos productos de calidad y asesoramiento experto para que disfrutes de tu experiencia sobre dos ruedas.</p>
     </section>
 
-    <section id="productos">
-        <h2>Nuestros Productos</h2>
-        <div class="product-gallery">
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300x200?text=Bicimoto+1" alt="Bicimoto modelo 1">
-                <h3>Bicimoto Sport 80cc</h3>
-                <p>Ideal para ciudad. Motor potente y eficiente. Desde $6,500 MXN.</p>
+    <section id="galeria">
+        <h2>Galería de Motores</h2>
+        <div class="motor-gallery">
+            <!-- Motor 1 -->
+            <div class="motor-item">
+                <img src="https://via.placeholder.com/300x200.png?text=Motor+1" alt="Motor 1">
+                <h3>Motor 48cc</h3>
+                <p>Motor de 48cc ideal para principiantes.</p>
             </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300x200?text=Bicimoto+2" alt="Bicimoto modelo 2">
-                <h3>Bicimoto Adventure 100cc</h3>
-                <p>Para caminos largos y difíciles. Desde $7,800 MXN.</p>
+            <!-- Motor 2 -->
+            <div class="motor-item">
+                <img src="https://via.placeholder.com/300x200.png?text=Motor+2" alt="Motor 2">
+                <h3>Motor 80cc</h3>
+                <p>Motor de 80cc para mayor velocidad.</p>
             </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300x200?text=Bicimoto+3" alt="Bicimoto modelo 3">
-                <h3>Bicimoto Clásica</h3>
-                <p>Diseño retro, motor confiable. Desde $6,200 MXN.</p>
+            <!-- Motor 3 -->
+            <div class="motor-item">
+                <img src="https://via.placeholder.com/300x200.png?text=Motor+3" alt="Motor 3">
+                <h3>Motor 100cc</h3>
+                <p>Motor de 100cc para uso profesional.</p>
             </div>
+            <!-- Agregar más motores aquí -->
         </div>
-    </section>
-
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <ul>
-            <li>Venta de bicimotos nuevas</li>
-            <li>Instalación de motores a bicicletas</li>
-            <li>Mantenimiento y refacciones</li>
-            <li>Asesoría personalizada</li>
-            <li>Envíos seguros a todo México</li>
-        </ul>
     </section>
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <p>¿Tienes dudas o quieres cotizar tu bicimoto? Contáctanos por WhatsApp o redes sociales:</p>
-        <ul>
-            <li>📞 Tel: +52 55 1234 5678</li>
-            <li>📧 Email: contacto@bicimotosibarra.mx</li>
-            <li>📍 Envíos desde CDMX a todo México</li>
-        </ul>
+        <p>¿Tienes preguntas? Contáctanos a través de los siguientes medios:</p>
+        <div class="contact-buttons">
+            <a href="https://wa.me/521234567890" target="_blank">Enviar WhatsApp</a>
+            <a href="https://www.facebook.com/BicimotosIbarra" target="_blank">Página de Facebook</a>
+            <a href="mailto:contacto@bicimotosibarra.com">Enviar Correo</a>
+        </div>
     </section>
+</div>
 
-    <footer>
-        <p>&copy; 2025 Bicimotos Ibarra. Todos los derechos reservados.</p>
-    </footer>
-
-    <!-- Botón de WhatsApp -->
-    <a class="whatsapp-button" href="https://wa.me/5215512345678" target="_blank" title="Contáctanos por WhatsApp">💬</a>
+<footer>
+    <p>&copy; 2025 Bicimotos Ibarra | Todos los derechos reservados</p>
+</footer>
 
 </body>
 </html>
