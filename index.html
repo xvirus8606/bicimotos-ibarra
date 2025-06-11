@@ -20,6 +20,9 @@
     nav {
       background-color: #34495e;
       overflow: hidden;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     nav a {
@@ -41,7 +44,7 @@
       border-radius: 8px;
     }
 
-    h2 {
+    h2, h3 {
       color: #2c3e50;
     }
 
@@ -59,6 +62,7 @@
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
     .motor-item img {
@@ -72,9 +76,10 @@
       margin: 0;
     }
 
-    .contact-buttons a {
+    .contact-buttons a,
+    .motor-item a {
       display: inline-block;
-      margin: 10px 10px 0 0;
+      margin: 10px 10px 10px 0;
       padding: 10px 15px;
       background-color: #27ae60;
       color: white;
@@ -82,8 +87,15 @@
       text-decoration: none;
     }
 
-    .contact-buttons a:hover {
+    .contact-buttons a:hover,
+    .motor-item a:hover {
       background-color: #1e8449;
+    }
+
+    iframe {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 10px 0;
     }
 
     footer {
@@ -131,21 +143,49 @@
 <section id="galeria">
   <h2>Galería de Motores</h2>
   <div class="motor-gallery">
+
+    <!-- Motor 48cc -->
     <div class="motor-item">
-      <img src="MT48.jpg" alt="Motor 1">
+      <img src="MT48.jpg" alt="Motor 48cc">
       <h3>Motor 48cc</h3>
-      <p>Motor compacto, ideal para recorridos urbanos y bajo consumo.</p>
+      <p>Motor compacto de 2 tiempos, ideal para ciudad. Bajo consumo de combustible, fácil de mantener.</p>
+      <p><strong>Precio:</strong> $130 USD</p>
+      <a href="https://ejemplo.com/comprar/motor48cc" target="_blank">Comprar</a>
     </div>
+
+    <!-- Motor 80cc -->
     <div class="motor-item">
-      <img src="MT100.jpg" alt="Motor 2">
-      <h3>Motor 100cc</h3>
-      <p>Excelente balance entre potencia y eficiencia.</p>
-    </div>
-    <div class="motor-item">
-      <img src="MT80.jpg" alt="Motor 3">
+      <img src="MT80.jpg" alt="Motor 80cc">
       <h3>Motor 80cc</h3>
-      <p>Alto rendimiento para trayectos largos y exigentes.</p>
+      <p>Motor de buena potencia, velocidad media. Ideal para quienes buscan equilibrio entre consumo y fuerza.</p>
+      <p><strong>Precio:</strong> $150 USD</p>
+      <a href="https://ejemplo.com/comprar/motor80cc" target="_blank">Comprar</a>
     </div>
+
+    <!-- Motor 100cc -->
+    <div class="motor-item">
+      <img src="MT100.jpg" alt="Motor 100cc">
+      <h3>Motor 100cc</h3>
+      <p>Máxima potencia para trayectos largos o zonas inclinadas. Motor robusto y confiable para todo tipo de uso.</p>
+      <p><strong>Precio:</strong> $170 USD</p>
+      <a href="https://ejemplo.com/comprar/motor100cc" target="_blank">Comprar</a>
+    </div>
+  </div>
+
+  <hr style="margin: 40px 0;">
+
+  <!-- VIDEO DE DEMOSTRACIÓN -->
+  <div style="text-align: center; margin-bottom: 30px;">
+    <h3>Video de demostración del motor en acción</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9uITJxAz_Es"
+      title="Demostración de motor de bicimoto" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <!-- VIDEO DE MONTAJE -->
+  <div style="text-align: center;">
+    <h3>Cómo montar el motor a una bicicleta</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fM-QoBM8wrU"
+      title="Instalación de motor en bicicleta" frameborder="0" allowfullscreen></iframe>
   </div>
 </section>
 
